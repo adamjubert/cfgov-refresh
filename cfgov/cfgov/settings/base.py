@@ -550,6 +550,7 @@ CSP_CONNECT_SRC = ("'self'",
                    'files.consumerfinance.gov',
                    's3.amazonaws.com',
                    'public.govdelivery.com',
+                   'n2.mouseflow.com',
                    'api.iperceptions.com')
 
 # Feature flags
