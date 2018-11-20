@@ -40,7 +40,10 @@ LOGGING = {
 if os.environ.get('ENABLE_DEBUG_TOOLBAR'):
     INSTALLED_APPS += ('debug_toolbar',)
 
-    INTERNAL_IPS = ('127.0.0.1', '10.0.2.2')
+    # Local running instances: 127.0.0.1
+    # VirtualBox docker-machine instances: 10.0.2.2
+    # Docker for Mac instances: 172.18.0.1
+    INTERNAL_IPS = ('127.0.0.1', '10.0.2.2', '172.18.0.1')
 
     MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 
